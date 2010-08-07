@@ -26,17 +26,9 @@ body {
 	background-color: #ebebeb;
 }
 
-article {
-	margin: 10px;
-}
-
 h1 {
 	font-weight: normal;
 	font-size: 2.1em;
-}
-
-div#container > hgroup {
-	background-color: #fff;
 }
 
 
@@ -47,7 +39,7 @@ body > header {
 	padding-left: 1em;
 	padding-right: 1em;
 	padding-bottom: 1em;
-	height: 85px;
+	height: 6em;
 }
 
 hgroup > hgroup {
@@ -61,12 +53,12 @@ hgroup > hgroup h2 {
 }
 
 h1 a:link {
-	color: #000;
+	color: #181818;
 }
 
-h1#logo {
+body > header > hgroup > h1 {
 	margin-left: 0.7em;
-	font-size: 52px;
+	font-size: 3.7em;
 	float: left;
 	font-weight: normal;
 }
@@ -92,7 +84,8 @@ nav li {
 
 /* ASIDE */
 
-hgroup.main {
+div#main {
+	background-color: #fff;
 	width: 550px;
 	float: left;
 }
@@ -120,17 +113,25 @@ aside > h2 > a {
 
 /* MAIN ARTICLE */
 
-hgroup.main h1 {
+div#main h1 {
 	font-size: 1.7em;
 	padding-top: 0.2em;
 	padding-bottom: 0.4em;
+}
+
+div#main {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+div#main p {
+	text-indent: 1em;
 }
 
 
 /* COMMENTS */
 
 div#container > h1 {
-	padding-top: 0.5em;
 	padding-left: 0.5em;
 	clear: both;
 }
@@ -140,17 +141,15 @@ div#container > article {
 	width: 530px;
 	padding: 10px;
 	display: block;
+	min-height: 100px;
 }
 
 div#container > article > header {
 	width: 100px;
 	float: left;
 	clear: left;
-}
 
-div#container > article > header {
-	float: left;
-
+	text-align: center;
 }
 
 article.post1 {
@@ -163,5 +162,8 @@ article.post1 {
 
 footer {
 	clear: both;
+	text-align: center;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
 }
 
