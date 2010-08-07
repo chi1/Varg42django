@@ -4,6 +4,7 @@ import os
 
 SITE_ROOT = os.path.dirname(os.path.realpath(__file__))
 DATABASE_NAME = os.path.join(SITE_ROOT, '..', 'db') + '/development.db'
+TEMPLATE_DIR = os.path.join(SITE_ROOT, 'templates')
 
 
 
@@ -88,6 +89,7 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+    TEMPLATE_DIR,
 )
 
 INSTALLED_APPS = (
@@ -96,6 +98,6 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.sites',
     'django.contrib.messages',
-    # Uncomment the next line to enable the admin:
     'django.contrib.admin',
+    'varg42django.weblog',
 )

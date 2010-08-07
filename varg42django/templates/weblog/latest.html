@@ -1,0 +1,12 @@
+<article>
+	<header>
+		<time datetime="{{ post.pubdate|date:"Y-m-d\TH:I:s" }}" pubdate>
+			{{ post.pubdate|date:"j F Y" }}
+		</time>
+		<h1>{{ post.heading }}</h1>
+	</header>
+
+	{{ post.content|linebreaks }}
+
+	<p>Signed, {{ post.author }}</p>
+</article>
