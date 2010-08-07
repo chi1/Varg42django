@@ -1,7 +1,11 @@
+{% extends 'weblog/base.html' %}
+
+{% block content %}
+
 <article>
 	<header>
 		<time datetime="{{ post.pubdate|date:"Y-m-d\TH:I:s" }}" pubdate>
-			{{ post.pubdate|date:"j F Y" }}
+			{{ post.pubdate|date:"j F Y" }}, {{ post.pubdate|time:"H.i.s" }}
 		</time>
 		<h1>{{ post.heading }}</h1>
 	</header>
@@ -10,3 +14,6 @@
 
 	<p>Signed, {{ post.author }}</p>
 </article>
+
+{% endblock %}
+

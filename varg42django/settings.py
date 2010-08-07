@@ -5,6 +5,7 @@ import os
 SITE_ROOT = os.path.dirname(os.path.realpath(__file__))
 DATABASE_NAME = os.path.join(SITE_ROOT, '..', 'db') + '/development.db'
 TEMPLATE_DIR = os.path.join(SITE_ROOT, 'templates')
+STATIC_MEDIA = os.path.join(SITE_ROOT, '..', 'static')
 
 
 
