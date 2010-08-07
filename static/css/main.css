@@ -1,0 +1,169 @@
+/* DEFAULT BEHAVIOUR RESETS */
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+article, header, nav, footer, aside, ul, ol {
+	display: block;
+}
+
+
+/* COMMON STUFF */
+
+html {
+	font-family: arial, verdana, sans-serif;
+	font-size: 14px;
+	color: #181818;
+	background-color: #fff;
+}
+
+body {
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #ebebeb;
+}
+
+h1 {
+	font-weight: normal;
+	font-size: 2.1em;
+}
+
+
+/* HEADER ( <3 ) */
+
+body > header {
+	padding-top: 3em;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-bottom: 1em;
+	height: 6em;
+}
+
+hgroup > hgroup {
+	float: right;
+	text-align: right;
+}
+
+hgroup > hgroup h2 {
+	font-size: 1em;
+	font-weight: normal;
+}
+
+h1 a:link {
+	color: #181818;
+}
+
+body > header > hgroup > h1 {
+	margin-left: 0.7em;
+	font-size: 3.7em;
+	float: left;
+	font-weight: normal;
+}
+
+nav {
+	color: #ebebeb;
+	background-color: #181818;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	font-size: 1.3em;
+	letter-spacing: 0.05em;
+}
+
+nav ol {
+	list-style: none;
+}
+
+nav li {
+	display: inline;
+	padding-left: 3em;
+}
+
+
+/* ASIDE */
+
+div#main {
+	background-color: #fff;
+	width: 550px;
+	float: left;
+}
+
+aside {
+	width: 250px;
+	height: 100%;
+	float: right;
+}
+
+aside li {
+	margin-left: 1em;
+	list-style: none;
+}
+
+aside > h2 {
+	margin: 0.8em;
+	text-align: center;
+}
+
+aside > h2 > a {
+	font-size: 0.9em;
+	color: #6A829A;
+}
+
+/* MAIN ARTICLE */
+
+div#main h1 {
+	font-size: 1.7em;
+	padding-top: 0.2em;
+	padding-bottom: 0.4em;
+}
+
+div#main {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+div#main p {
+	text-indent: 1em;
+}
+
+
+/* COMMENTS */
+
+div#container > h1 {
+	padding-left: 0.5em;
+	clear: both;
+}
+
+div#container > article {
+	clear: both;
+	width: 530px;
+	padding: 10px;
+	display: block;
+	min-height: 100px;
+}
+
+div#container > article > header {
+	width: 100px;
+	float: left;
+	clear: left;
+
+	text-align: center;
+}
+
+article.post1 {
+	margin-left: 0;
+	background-color: #fff;
+}
+
+
+/* FOOTER */
+
+footer {
+	clear: both;
+	text-align: center;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
